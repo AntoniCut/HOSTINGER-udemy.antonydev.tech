@@ -1,0 +1,21 @@
+---
+
+
+import CursoHtml5Layout from '../../layouts/CursoHtml5Layout.astro';
+import NavBarCursoHtml5 from '../../components/NavBarCursoHtml5.astro';
+
+const titlePage = "Curso de HTML 5 desde Cero - Udemy";
+const titleHeader = titlePage;
+
+---
+
+
+
+<CursoHtml5Layout titlePage={ titlePage }>
+
+    <h1 transition:name={ titleHeader }> { titleHeader } </h1>
+
+    <NavBarCursoHtml5 />
+
+
+</CursoHtml5Layout>

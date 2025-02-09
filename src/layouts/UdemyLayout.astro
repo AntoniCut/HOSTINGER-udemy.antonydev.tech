@@ -1,0 +1,43 @@
+---
+
+//  ----------------------------------------------------------------------
+//  -----  /udemy.antonydev.tech/src/layouts/UdemyLayout.astro  ---------- 
+//  ----------------------------------------------------------------------
+
+import { ClientRouter } from "astro:transitions"
+
+
+---
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/udemy-favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title> Udemy Mis Proyectos - AntonyDev </title>
+	<ClientRouter />
+</head>
+
+<body>
+    <slot />
+</body>
+
+</html>
+
+<style>
+  
+  body {
+      margin: auto;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+  }
+
+</style>

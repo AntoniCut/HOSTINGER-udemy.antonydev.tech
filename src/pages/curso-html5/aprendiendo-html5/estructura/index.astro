@@ -1,0 +1,42 @@
+---
+
+//  -----------------------------------------------------------------
+//  ----------  /udemy.antonydev.tech/  -----------------------------
+//  ----------  /curso-html5-desde-cero/  ---------------------------
+//  ----------  /aprendiendo-html5/estructura/index.astro  ----------
+//  -----------------------------------------------------------------
+
+
+import NavBarCursoHtml5 from "@components/NavBarCursoHtml5.astro";
+import CursoHtml5Layout from "@layouts/CursoHtml5Layout.astro";
+import ContentLayout from "@components/ContentLayout.astro";
+import FooterLayout from "@components/FooterLayout.astro";
+
+const titlePage = "Estructura de HTML 5";
+const title = titlePage;
+
+---
+
+
+<CursoHtml5Layout titlePage={ titlePage }>
+    
+    <h1 transition:name={ title }> { title } </h1>
+    <NavBarCursoHtml5 />
+
+    <ContentLayout> 
+
+        <section>
+            <!--articulos-->
+            <article>
+                <h2> Titulo articulo </h2>
+                <span> Programacion </span>
+                <time> 07-07-2023 </time>
+                <p> Esto es un Articulo de Prueba </p>
+            </article>
+        </section>
+
+    </ContentLayout>
+
+    <FooterLayout />
+
+</CursoHtml5Layout>

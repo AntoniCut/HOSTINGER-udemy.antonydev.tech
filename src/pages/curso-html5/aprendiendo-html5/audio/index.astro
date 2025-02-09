@@ -1,0 +1,36 @@
+---
+
+//  ------------------------------------------------------------
+//  ----------  /udemy.antonydev.tech/  ------------------------
+//  ----------  /curso-html5/  ---------------------------------
+//  ----------  /aprendiendo-html5/audio/index.astro  ----------
+//  ------------------------------------------------------------
+
+import CursoHtml5Layout from "@layouts/CursoHtml5Layout.astro";
+import NavBarCursoHtml5 from "@components/NavBarCursoHtml5.astro";
+import ContentLayout from "@components/ContentLayout.astro";
+import FooterLayout from "@components/FooterLayout.astro";
+
+const titlePage = "Audios de HTML 5";
+const title = titlePage;
+
+
+---
+
+<CursoHtml5Layout titlePage={ titlePage } >
+    
+    <h1 transition:name={title} > { title } </h1>
+
+    <NavBarCursoHtml5 />
+
+    <ContentLayout> 
+
+        <audio src="/curso-html5/audios/06-27-2023-communion-after-dark.mp3" controls autoplay>
+            Esta Etiqueta no es compatible.
+        </audio>
+
+    </ContentLayout>
+
+    <FooterLayout />
+
+</CursoHtml5Layout>

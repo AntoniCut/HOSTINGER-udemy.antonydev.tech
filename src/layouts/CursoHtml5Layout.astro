@@ -1,0 +1,51 @@
+---
+
+//  ---------------------------------------------------------------------------
+//  -----  /udemy.antonydev.tech/src/layouts/CursoHtml5Layout.astro  ---------- 
+//  --------------------------------------------------------------------------- 
+
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+    titlePage: string;
+    //titleHeader: string;
+}
+
+const { titlePage } = Astro.props;
+
+
+---
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/html5-favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title> { titlePage } </title>
+    <ClientRouter />
+</head>
+
+<body>
+    <slot />
+</body>
+
+</html>
+
+<style>
+  
+  body {
+      margin: auto;
+      /*max-width: 1200px;*/
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+  }
+  
+</style>

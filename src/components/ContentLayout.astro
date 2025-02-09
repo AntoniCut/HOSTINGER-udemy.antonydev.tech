@@ -1,0 +1,37 @@
+---
+
+//  --------------------------------------------------------------------------------
+//  ----------  /udemy.antonydev.tech/src/components/ContentLayout.astro  ----------
+//  --------------------------------------------------------------------------------
+
+
+
+---
+
+
+<main id="layoutContent" class="layout__content">
+
+    <slot />
+        
+</main>
+
+
+<style>
+
+    .layout__content {
+        width: 100%;
+        max-width: 1600px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 0 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: #eeeeee;
+        flex-grow: 1;
+    }
+
+</style>
